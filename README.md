@@ -81,6 +81,18 @@ Après ce premier exercice, prenez connaissance du guide MDN sur le destructurin
 
 Vérifiez que le code réalisé dans cet exercice est bien optimal compte-tenu des exemples fournis par MDN. Optimisez-le si nécessaire.
 
+### Section 3
+
+Il est possible de destructurer le(s) paramètre(s) d'une fonction, cela permet d'émuler les paramètres nommés de certains langages.
+Créer une fonction qui prend en paramètre une un objet *perturbation* et l'ajoute dans le l'objet `data` précédent. Cette fonction devra déstructurer le paramètre et fournir des valeurs par défaut pour les champs non essentiels (`type`, `heureDebut`, `heureFin`, `latitude`, ....).
+Faites des appels à votre fonction et vérifier que le résultat est cohérent.
+
+### Section 4
+
+Avec l'opérateur rest (`...`), on peut mettre tous ou certains des paramètres dans un tableau, cela permet de gérer un nombre variable de paramètres.
+Ecrire une fonction qui prend un nombre indéfini de paramètre et les affiche dans la console.
+
+
 **COMMITTEZ VOS CHANGEMENTS 🚢**
 
 ## Import / Export
