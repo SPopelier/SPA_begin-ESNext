@@ -17,7 +17,7 @@ Pour les réaliser, vous pourrez vous appuyer sur le site Mozilla Developer Netw
 * Promises : https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Utiliser_les_promesses
 
 Pour chaque exercice, placez-vous dans le dossier indiqué et ouvrez le fichier index.html avec Firefox ou Chrome, au choix.
-  
+
 ## Variables `let` et `const`
 ➡️ Exercice à réaliser dans le dossier `1-variables`
 
@@ -116,9 +116,27 @@ Exporter les fonctions du fichier `math.js` pour pouvoir les utiliser dans le sc
 
 **Rappel** - Avant de réaliser cet exercice, prenez connaissance du guide MDN sur le sujet : https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Utiliser_les_promesses
 
+### Section 1
+
 1. Observer et expliquer l'ordre des messages affichés dans la console.
 2. Utiliser les `promises` afin que les messages s'enchaînent dans le bon ordre (1, 2, 3).
 3. Remplacer l'appel à la fonction second() par secondWithError() afin de simuler une erreur lors de l'exécution.
 4. Modifier le code afin de ne pas briser la chaîne des appels malgré tout.
 5. Modifier le code afin d'afficher le message d'erreur entre les messages 1 et 3.
-   
+
+
+### Section 2
+
+Regarder l'API fetch (https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch), qui fait une requête http et retourne la réponse sous la forme d'une promise.
+
+Vous allez ensuite utiliser fetch pour faire des appels à l'API  Star Wars (https://swapi.dev/)  ou Studio Ghibli  https://ghibliapi.herokuapp.com/ (au choix).
+
+1. Écrire une fonction qui fait une requête pour récupérer les caractéristiques de l'espèce avec l'id 1 (les humains).
+2. Écrire une fonction, qui va chaîner l'appel à la fonction précédente pour récupérer les caractéristique du premier personnage du tableau people.
+3. Écrire un fonction pour récupérer, **en parallèle**, les fiches de tous les personnages d'une espèce données pour afficher leurs noms. Pour que l'exécution ait lieu en parallèle, une fois que vous avez les urls de vos personnages, il faut appeler fetch sur chacune des urls sans attendre que celles-ci soient résolues. Pour cela, vous aurez besoin de `Array.map` pour convertir un tableau d'urls en tableau de promises (avec fetch) et un  `Promise.all` pour attendre la résolution de toutes vos promesses (l’exécution de vos requêtes).
+
+
+**COMMITTEZ VOS CHANGEMENTS 🚢**
+
+
+
