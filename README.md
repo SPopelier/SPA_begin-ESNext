@@ -135,6 +135,12 @@ Vous allez ensuite utiliser fetch pour faire des appels à l'API  Star Wars (htt
 2. Écrire une fonction, qui va chaîner l'appel à la fonction précédente pour récupérer les caractéristique du premier personnage du tableau people.
 3. Écrire un fonction pour récupérer, **en parallèle**, les fiches de tous les personnages d'une espèce données pour afficher leurs noms. Pour que l'exécution ait lieu en parallèle, une fois que vous avez les urls de vos personnages, il faut appeler fetch sur chacune des urls sans attendre que celles-ci soient résolues. Pour cela, vous aurez besoin de `Array.map` pour convertir un tableau d'urls en tableau de promises (avec fetch) et un  `Promise.all` pour attendre la résolution de toutes vos promesses (l’exécution de vos requêtes).
 
+### Section 3
+
+1. Modifier votre code pour ajouter deux boutons dans la page : 'OK' et 'Cancel'
+2. Créer un fonction qui retourne une promise qui se résoudra (resolve) quand le bouton 'OK' est cliqué et échouera (reject) quand le bouton 'Cancel' est cliqué.
+3. Utiliser cette fonction pour afficher "Ok clicked" ou "Cancel clicked" dans la console
+
 
 **COMMITTEZ VOS CHANGEMENTS 🚢**
 
