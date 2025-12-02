@@ -12,6 +12,12 @@ const bus = {
     equipments: ['sae', 'tft', 'speech']
 };
 
-//3.2 Object.values
+for (const [key, value] of Object.entries(bus)) {
+    console.log(`${key}: ${JSON.stringify(value)}`);
+}
 
-console.log(data);
+
+//3.2 Object.values
+Object.values(data).forEach(perturbation => {
+    console.log(perturbation.texte);
+});
